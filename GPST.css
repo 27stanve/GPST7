@@ -1,0 +1,202 @@
+body {
+    background-color:#FFFFFF;
+    color:#666666;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color:#00B386;
+    background-image: url(assets/pasture.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    color:#FFFFFF;
+    height:175px;
+    margin-top:15px;
+    text-align:center;
+    text-indent:1em;
+    line-height:400%;
+    padding-top:30px;
+    padding-left:3em;
+}
+
+nav {
+    padding:1.5em;
+    font-weight:bold;
+    font-size:120%;
+    float:left;
+    width:160px;
+}
+
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding-left:0;
+    font-size:1.2em;
+}
+
+nav li {
+    display:block;
+}
+
+nav a {
+    text-decoration:none;
+    transition: color 3s ease-out;
+}
+
+nav a:link {
+    color:#00664D;
+}
+
+nav a:visited {
+    color:#7A7A52;
+}
+
+nav a:hover {
+    color:#FFFFFF;
+}
+
+main {
+    padding:1px 20px 20px 20px;
+    margin-left:190px;
+    background-color:#FFFFFF;
+}
+
+footer {
+    padding:15px;
+    text-align:center;
+    font-size:75%;
+    font-style:italic;
+    font-family: Georgia, "Times New Roman", serif;
+    margin-left:190px;
+    background-color:#FFFFFF;
+    clear: both;
+}
+
+h1 {
+    margin-bottom:0px;
+    font-family: Georgia, "Times New Roman", serif;
+    margin-top:0px;
+    font-size:3em;
+    letter-spacing:0.25em;
+}
+
+h2 {
+    color:#00664d;
+    text-shadow:1px 1px #CCCCCC;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #006646;
+}
+
+main ul {
+    list-style-image: url(assets/marker.gif);
+}
+
+dt {
+    color:#00664d;
+}
+
+table {
+  border:1.5px solid #006600;
+}
+
+td, th {
+    padding: 0.5em;
+    border: 1.5px solid #006600;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #ECF9EC;
+}
+
+#wrapper {
+    margin:auto;
+    width:80%;
+    min-width:900px;
+    max-width:2050px;
+    box-shadow:4px 4px #133926;
+    background-image:linear-gradient(to bottom, #FFFFFF, #0C5442);
+    background-color:#0C5442;
+    border:1.5px #003300;
+}
+
+#homeImage {
+    background-image:url(assets/sunsetHorse.png);
+    height:300px;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    margin-left:190px;
+}
+
+#boardImage {
+    background-image:url(assets/fenceline.png);
+    height:300px;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    margin-left:190px;
+}
+
+#trainingImage {
+    background-image:url(assets/BayBella.png);
+    height:300px;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    margin-left:190px;
+}
+
+/* Image Gallery Styles */
+#gallery {
+    position: relative;
+    height: 200px;
+}
+
+#gallery ul {
+    list-style-type: none;
+    width: 300px;
+}
+
+#gallery li {
+    display: inline;
+    float: left;
+    padding: 10px;
+}
+
+#gallery img {
+    border: none;
+}
+
+#gallery a {
+    text-decoration: none;
+    font-style: italic;
+    color: white;
+}
+
+#gallery span {
+    position: absolute;
+    left: -1000px;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+#gallery a:hover span {
+    position: absolute;
+    top: 15px;
+    left: 320px;
+    text-align: center;
+    opacity: 1;
+}
+
+#gallery figure {
+    position: absolute;
+    left: 280px;
+    opacity: 0.25;
+}
+
+@media only screen and (max-width: 37.5em) {
+    #gallery {
+        display: none;
+    }
+}
